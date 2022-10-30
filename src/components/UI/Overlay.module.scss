@@ -1,0 +1,15 @@
+.overlay {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1000px;
+   background-color: #efefef;
+   display: flex;
+   justify-content: center;
+   margin-top: -5rem;
+   &::after,
+   &::before {
+      content: "";
+      clear: both;
+      display: block;
+   }
+}
