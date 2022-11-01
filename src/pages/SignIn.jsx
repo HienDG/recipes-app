@@ -43,6 +43,7 @@ const SignIn = () => {
                   let errMessage = "Authentication failed!";
                   if (data && data.error && data.error.message) errMessage = data.error.message;
                   alert(errMessage);
+                  console.log(data);
                   throw new Error(errMessage);
                });
             }

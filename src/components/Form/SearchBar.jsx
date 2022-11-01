@@ -18,9 +18,12 @@ const SearchBar = () => {
       const notAVoidString = !!enteredQuery;
 
       if (notAVoidString) {
+         navigate(`recipes/${enteredQuery}`);
       } else {
          navigate("/not-found");
       }
+
+      inputQueryRef.current.value = "";
    };
 
    return (

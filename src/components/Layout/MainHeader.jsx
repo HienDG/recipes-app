@@ -9,7 +9,6 @@ import store from "../../store";
 const MainHeader = () => {
    const authContext = useContext(store);
    const { isLoggedIn, logout } = authContext;
-   console.log(isLoggedIn);
    const navigate = useNavigate();
    const navigateHandler = () => {
       navigate("/register");

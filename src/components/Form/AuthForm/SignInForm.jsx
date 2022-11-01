@@ -21,7 +21,7 @@ const SignInForm = (props) => {
       <Formik initialValues={initialState} validationSchema={validate} onSubmit={props.submitForm}>
          {(formik) => {
             return (
-               <div className={classes["form__container"]} style={{ width: "40%" }}>
+               <div className={classes["form__container"]} style={{ width: "35%" }}>
                   <div className={classes["modal__form"]}>
                      <h1 className={classes["modal__form--heading"]}>Sign In</h1>
                      <Form className={classes["form__control"]}>
