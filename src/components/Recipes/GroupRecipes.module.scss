@@ -1,7 +1,10 @@
+@import "../../variables.scss";
+
 section {
    margin-bottom: 20px;
    margin-top: 30px;
    padding: 20px 0;
+   min-height: 500px;
    .group__title {
       background-color: #6f9972;
       color: #fff;
@@ -13,6 +16,7 @@ section {
       .title {
          text-transform: uppercase;
          font-size: 18px;
+         letter-spacing: 3px;
       }
       .group__item {
          display: flex;
@@ -40,10 +44,10 @@ section {
       list-style: none;
       flex-wrap: wrap;
       background: #fff;
-      height: 571px;
+      min-height: 600px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       .item {
          flex: none;
          float: left;
@@ -62,6 +66,9 @@ section {
             text-decoration: none;
             margin-bottom: -5px;
             overflow: hidden;
+            height: 350px;
+            display: flex;
+            justify-content: center;
             .img__wrapper {
                width: 100%;
                .img {
@@ -77,6 +84,47 @@ section {
                font-size: 16px;
                line-height: 1.4;
             }
+         }
+      }
+      .btn__more {
+         border: none;
+         font-size: 16px;
+         width: 12%;
+         margin: 15px auto;
+         & a {
+            border: none;
+            text-align: center;
+            padding: 16px;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin: 0 14px;
+            border-radius: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+         }
+      }
+   }
+   .pagination {
+      margin-top: 2.5rem;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 3.5rem;
+      &::after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+
+      & .btn {
+         border: none;
+
+         &--prev {
+            float: left;
+         }
+         &--next {
+            float: right;
          }
       }
    }

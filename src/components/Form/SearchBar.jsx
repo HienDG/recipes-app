@@ -18,7 +18,7 @@ const SearchBar = () => {
       const notAVoidString = !!enteredQuery;
 
       if (notAVoidString) {
-         navigate(`recipes/${enteredQuery}`);
+         navigate(`recipes/search/${enteredQuery}`);
       } else {
          navigate("/not-found");
       }

@@ -21,7 +21,6 @@ export const Provider = (props) => {
    const [token, setToken] = useState(initialToken);
    const isLoggedIn = !!token;
    const signInHandler = (token) => {
-      console.log(token);
       localStorage.setItem("token", token);
       setToken(token);
    };

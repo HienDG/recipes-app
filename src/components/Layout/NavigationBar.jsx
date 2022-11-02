@@ -10,7 +10,7 @@ const NavigationBar = () => {
    const list = [...newMeaList].slice(next.min, next.max);
 
    const renderList = list.map((item, i) => (
-      <Link to={`recipes/${item}`} key={i} className={classes["meal__list"]}>
+      <Link to={`recipes/search/${item}`} key={i} className={classes["meal__list"]}>
          {item}
       </Link>
    ));
