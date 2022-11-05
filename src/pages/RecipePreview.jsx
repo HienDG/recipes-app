@@ -2,8 +2,8 @@ import Recipe from "../components/Recipes/Recipe/Recipe";
 import Spinner from "../components/UI/Spinner";
 
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-
+import { useEffect, useState, useCallback } from "react";
+import React from "react";
 import { getAllRecipe } from "../components/utils/api";
 import axios from "axios";
 
@@ -47,4 +47,4 @@ const RecipeReview = () => {
   );
 };
 
-export default RecipeReview;
+export default React.memo(RecipeReview);

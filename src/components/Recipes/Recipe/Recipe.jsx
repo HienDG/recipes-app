@@ -6,6 +6,7 @@ import RecipeDirections from "./directions/RecipeDirections";
 import Card from "../../UI/Card";
 
 import { useState } from "react";
+import React from "react";
 
 const Recipe = (props) => {
   const {
@@ -52,4 +53,4 @@ const Recipe = (props) => {
   );
 };
 
-export default Recipe;
+export default React.memo(Recipe);

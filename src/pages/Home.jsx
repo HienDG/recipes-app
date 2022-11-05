@@ -1,5 +1,5 @@
 import GroupRecipes from "../components/Recipes/GroupRecipes";
-
+import React from "react";
 const Home = () => {
   return (
     <div>
@@ -11,4 +11,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default React.memo(Home);

@@ -1,6 +1,7 @@
 import SearchResult from "../components/Recipes/SearchResult";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import React from "react";
 import Spinner from "../components/UI/Spinner";
 
 import { getAllRecipe } from "../components/utils/api";
@@ -56,4 +57,4 @@ const SearchRecipes = () => {
   );
 };
 
-export default SearchRecipes;
+export default React.memo(SearchRecipes);
