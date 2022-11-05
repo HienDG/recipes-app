@@ -12,16 +12,14 @@ const initialState = {
 const SignInForm = (props) => {
    const validate = Yup.object({
       email: Yup.string().email("Email is Invalid").required("Email is Required"),
-      password: Yup.string()
-         .min(6, "Password must be 6 characters")
-         .required("Password is Required"),
+      password: Yup.string().min(6, "Password must be 6 characters").required("Password is Required"),
    });
 
    return (
       <Formik initialValues={initialState} validationSchema={validate} onSubmit={props.submitForm}>
          {(formik) => {
             return (
-               <div className={classes["form__container"]} style={{ width: "35%" }}>
+               <div className={classes["form__container"]} style={{ width: "450px" }}>
                   <div className={classes["modal__form"]}>
                      <h1 className={classes["modal__form--heading"]}>Sign In</h1>
                      <Form className={classes["form__control"]}>

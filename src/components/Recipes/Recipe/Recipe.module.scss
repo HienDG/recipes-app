@@ -88,6 +88,9 @@
       display: flex;
       margin-left: 1.6rem;
       transform: translateY(-1px);
+      .btn--servings:disabled {
+         opacity: 0.5;
+      }
    }
 
    &__user-generated {
